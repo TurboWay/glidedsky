@@ -8,6 +8,8 @@
 md = """# glidedsky
 glidedsky 爬虫练习笔记
 
+![image](https://github.com/TurboWay/imgstore/tree/master/glidedsky/process.jpg)
+
 # note
 
 - 爬虫采集属于 io 密集型操作，使用多线程并发可以提高效率，但是最佳并发数取决于爬虫的机器配置，而不是越多越好
