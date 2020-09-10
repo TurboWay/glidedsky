@@ -1,7 +1,7 @@
 # glidedsky
 glidedsky 爬虫练习笔记
 
-![image](https://github.com/TurboWay/imgstore/tree/master/glidedsky/process.jpg)
+![image](https://github.com/TurboWay/imgstore/blob/master/glidedsky/process.jpg)
 
 # note
 
