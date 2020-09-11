@@ -1,5 +1,5 @@
 # glidedsky
-glidedsky 爬虫练习笔记
+glidedsky 通关笔记
 
 [镀金的天空](http://www.glidedsky.com/) 是一个互联网技能认证网站，要保证用户解出一道题目就意味着拥有了解决类似问题相应的技能
 
