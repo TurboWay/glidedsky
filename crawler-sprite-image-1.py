@@ -52,7 +52,7 @@ def get_position_list(text):
     :param text: 将图片转化为 二值图像，非黑即白
     :return:
     """
-    img_str = re.findall('base64,(.*?)\)', text)[0]
+    img_str = re.findall('base64,(.*?)"', text)[0]
     img_fp = BytesIO(base64.b64decode(img_str.encode('utf-8')))
     img = Image.open(img_fp).convert('1')
     # img.show()

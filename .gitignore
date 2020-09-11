@@ -1,1 +1,5 @@
 /.idea/
+/venv/
+/0.9956.h5
+*.json
+/test.py
