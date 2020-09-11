@@ -37,6 +37,7 @@ with open("README.md", 'w', encoding='utf-8') as f:
     md += """
 ## refer
 >滑动验证码 参考 https://github.com/ybsdegit/captcha_qq    
->图片识别 参考 https://zhuanlan.zhihu.com/p/80995795 模型下载链接: https://pan.baidu.com/s/1y6CQHErGVkmlP4KzoSRkpw 提取码: 8yvd 
+>图片识别 参考 https://zhuanlan.zhihu.com/p/80995795 
+>模型下载链接: https://pan.baidu.com/s/1y6CQHErGVkmlP4KzoSRkpw 提取码: 8yvd 
 """
     f.write(md)
