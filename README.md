@@ -27,6 +27,8 @@ glidedsky 爬虫练习笔记
 | [crawler-sprite-image-2.py](https://github.com/TurboWay/glidedsky/blob/master/crawler-sprite-image-2.py)       | 爬虫-雪碧图-2 |
 
 ## refer
->滑动验证码 参考 https://github.com/ybsdegit/captcha_qq    
->图片识别 参考 https://zhuanlan.zhihu.com/p/80995795 
+>滑动验证码 参考 https://github.com/ybsdegit/captcha_qq
+>
+>图片识别 参考 https://zhuanlan.zhihu.com/p/80995795
+>
 >模型下载链接: https://pan.baidu.com/s/1y6CQHErGVkmlP4KzoSRkpw 提取码: 8yvd 
