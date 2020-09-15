@@ -23,23 +23,15 @@ from env import headers
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
-model = keras.models.load_model('0.9956.h5')
+model = keras.models.load_model('model.h5')
 
 
 def pic2num(img, box):
-    im = img.crop(box).convert('L')
-    data = (255 - np.array(im))
-    x, y = data.shape
-    if 20 - x:
-        data = np.insert(data, 0, np.zeros((20 - x, 1)), 0)
-    if 20 - y:
-        data = np.insert(data, 0, np.zeros((20 - y, 1)), 1)
-
-    def predict(data, num):  # num为一次预测的数量，data为转化后的（num,20,20）的数组
-        return model.predict_classes(data.reshape((num, 20, 20, 1)))
-
-    result = predict(data, 1)
-    return str(result[0])
+    img = img.crop(box).resize((20, 20)).convert('L')
+    img_arr = 1 - np.reshape(img, (20, 20, 1)) / 255.0
+    x = np.array([img_arr])
+    y = model.predict(x)
+    return str(np.argmax(y[0]))
 
 
 def get_img(text):
@@ -111,4 +103,4 @@ def main(result_path):
 if __name__ == "__main__":
     result_path = 'crawler-sprite-image-2.json'
     for _ in range(5):
-        main(result_path)  # 3201552
+        main(result_path)

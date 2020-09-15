@@ -13,7 +13,7 @@ glidedsky 通关笔记
 - 使用图片识别时，成功率不会达到 100%，所以多采集几次是必要的，对每个数取重复率最高的结果，是较好的做法
 
 ## list
-| 代码 | 说明  | 
+| 代码 | 说明 |
 | ------------ | ------------ |
 | [crawler-basic-1.py](https://github.com/TurboWay/glidedsky/blob/master/crawler-basic-1.py)       | 爬虫-基础1 |
 | [crawler-basic-2.py](https://github.com/TurboWay/glidedsky/blob/master/crawler-basic-2.py)       | 爬虫-基础2 |
@@ -31,6 +31,4 @@ glidedsky 通关笔记
 ## refer
 >滑动验证码 参考 https://github.com/ybsdegit/captcha_qq
 >
->图片识别 参考 https://zhuanlan.zhihu.com/p/80995795
->
->模型下载链接: https://pan.baidu.com/s/1y6CQHErGVkmlP4KzoSRkpw 提取码: 8yvd 
+>图片识别模型训练 https://github.com/TurboWay/antman
