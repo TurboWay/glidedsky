@@ -9,10 +9,10 @@ import base64
 from fontTools.ttLib import TTFont
 
 import re
-import os
 import requests
 from bs4 import BeautifulSoup
 from concurrent.futures import ThreadPoolExecutor
+from tempfile import TemporaryFile
 from env import headers
 
 number_map = {
@@ -30,12 +30,12 @@ number_map = {
 
 
 def crawler(url):
-    path = f"glided_sky{url.split('=')[-1]}.ttf"
     response = requests.get(url, headers=headers)
     font_face = re.findall('base64,(.*?)\)', response.text)
-    with open(path, 'wb') as f:
+    with TemporaryFile() as f:
         f.write(base64.b64decode(font_face[0]))
-    font = TTFont(path)  # 打开本地的ttf文件
+        f.seek(0)
+        font = TTFont(f)
     # font.saveXML('glided_sky.xml')  # 转换成xml
     # print(font.getGlyphOrder()[1:])
     font_map = {str(number_map.get(value)): str(px) for px, value in enumerate(font.getGlyphOrder()[1:])}
@@ -45,7 +45,6 @@ def crawler(url):
     for row in rows:
         score = int(row.text.translate(table))
         scores.append(score)
-    os.remove(path)
     print(f"第{url.split('=')[-1]}页 合计:{sum(scores)} 明细:{scores}")
     return sum(scores)
 
