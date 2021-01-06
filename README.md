@@ -5,7 +5,11 @@ glidedsky 通关笔记
 
 ![image](https://github.com/TurboWay/imgstore/blob/master/glidedsky/process.jpg)
 
-# note
+## wish
+
+- 作为过来人，深知个人自学的艰难，尤其是无人指导、无人探讨的孤独者。本 repo 旨在提供一份参考答案、解题思路，希望您可以在解题过程中有所收获。
+
+## note
 
 - 爬虫采集属于 io 密集型操作，使用多线程并发可以提高效率，但是最佳并发数取决于爬虫的机器配置，而不是越多越好
 - 网络请求有时候会出错，重试是必要的，不用框架的话，装饰器是很好的选择
