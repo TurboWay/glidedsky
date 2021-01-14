@@ -5,9 +5,6 @@ glidedsky 通关笔记
 
 ![image](https://github.com/TurboWay/imgstore/blob/master/glidedsky/process.jpg)
 
-## wish
-
-- 作为过来人，深知个人自学的艰难，尤其是无人指导、无人探讨的孤独者。本 repo 旨在提供一份参考答案、解题思路，希望您可以在解题过程中有所收获。
 
 ## note
 
